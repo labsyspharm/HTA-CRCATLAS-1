@@ -5,8 +5,7 @@ layout: default
 
 # HTA CRC Atlas 1
 
-[Story 1](https://www.cycif.org/data/tnp-2020/osd-crc-case-1-ffpe-cycif-stack)
+## Minerva Stories
 
-[Story 2](https://www.cycif.org/data/tnp-2020/osd-crc-case-1-ffpe-cycif)
-
-[Story 3](https://www.cycif.org/data/tnp-2020/osd-crc-case-1-ffpe-cycif-pilot)
+[CRC01 overview](osd-crc-case-1-ffpe-cycif.html)
+[CRC01 Z-stack](osd-crc-case-1-ffpe-cycif-stack.html)
