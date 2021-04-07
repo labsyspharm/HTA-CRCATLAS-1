@@ -26,5 +26,6 @@ sapien. Mauris porta augue id nisl pretium rhoncus.
 
 ## Minerva Stories
 
-* [CRC01 overview](osd-crc-case-1-ffpe-cycif.html)
-* [CRC01 Z-stack](osd-crc-case-1-ffpe-cycif-stack.html)
+[CRC01 overview <br> ![](images/thumbnail-crc01-overview.jpg){:width="400px" height="406px"}](story-overview.html)
+
+[CRC01 Z-stack <br> ![](images/thumbnail-crc01-stack.jpg){:width="400px" height="391px"}](story-stack.html)
