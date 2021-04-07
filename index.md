@@ -6,23 +6,23 @@ nav_order: 1
 
 # HTA CRC Atlas 1
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum odio quam,
-sagittis vel tincidunt vel, aliquet eu ligula. Nullam eu velit justo. Curabitur
-lacinia nunc a lectus fermentum elementum. Donec ultrices metus suscipit,
-scelerisque quam sed, eleifend ligula. Integer mi urna, vulputate a vestibulum
-ac, iaculis non augue. Nullam varius rhoncus orci ut aliquam. Morbi at erat
-fermentum, ornare arcu at, rutrum magna. Mauris velit urna, suscipit dapibus
-consequat eget, sodales non nulla. Donec elementum scelerisque sagittis. Nullam
-pulvinar sed felis gravida elementum. Vestibulum hendrerit dui turpis, sit amet
-fermentum nunc pretium ut. Nullam vitae ligula posuere, dignissim lectus et,
-lacinia ex. Aenean cursus suscipit maximus. Pellentesque libero ex, viverra ac
-commodo non, finibus eget purus.
+Advanced solid cancers are complex assemblies of tumor, immune, and stromal
+cells that invade adjacent tissue and spread to distant sites. Here we use
+highly multiplexed tissue imaging, spatial statistics, and machine learning to
+identify cell types and states underlying morphological features of known
+diagnostic and prognostic significance in colorectal cancer. We find that a
+thorough spatial analysis requires imaging the entire tumor region, not small
+fields of view (e.g. those found in tissue microarrays). When this condition is
+met, the data reveal frequent transitions between histological archetypes (tumor
+grades and morphologies) correlated with molecular gradients. At the tumor
+invasive margin, where tumor, normal, and immune cells compete, localized
+features in 2D such as tumor buds and mucin pools are seen in 3D to be large
+connected structures having continuously varying molecular
+properties. Immunosuppressive cell-cell interactions also exhibit graded
+variation in type and frequency. Thus, whereas scRNA-Seq emphasizes discrete
+changes in tumor state, whole-specimen imaging reveals the presence of large-
+and small-scale spatial gradients analogous to those in developing tissues.
 
-Suspendisse potenti. Morbi nibh massa, luctus vitae eros et, dignissim egestas
-diam. Vivamus a felis et tellus gravida imperdiet. Proin feugiat laoreet nunc
-sed eleifend. Curabitur vitae tristique lorem. Suspendisse sed mattis
-risus. Pellentesque tortor nibh, sagittis id sem in, pharetra commodo
-sapien. Mauris porta augue id nisl pretium rhoncus.
 
 ## Minerva Stories
 
