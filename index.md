@@ -17,14 +17,17 @@ significance in colorectal cancer. This includes the tumor invasive margin,
 where tumor, normal, and immune cells compete and were diverse immunosuppressive
 environments are found.
 
-## Minerva Stories
-
-[CRC01 introduction <br> ![](images/thumbnail-crc01-introduction.jpg){:width="400px" height="413px"}](story-introduction.html)
+## Data overviews
 
 [CRC01 overview <br> ![](images/thumbnail-crc01-overview.jpg){:width="400px" height="406px"}](story-overview.html)
 
+{::comment}
 [CRC01 Z-stack <br> ![](images/thumbnail-crc01-stack.jpg){:width="400px" height="391px"}](story-stack.html)
+{:/comment}
 
+## Data Explorations
+
+[CRC01 introduction <br> ![](images/thumbnail-crc01-introduction.jpg){:width="400px" height="413px"}](story-introduction.html)
 
 ## About Minerva: Exploring the primary image data in Lin-Wang-Sorger et al.
 
