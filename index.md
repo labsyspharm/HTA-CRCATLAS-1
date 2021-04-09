@@ -19,15 +19,15 @@ environments are found.
 
 ## Data overviews
 
-[CRC01 overview <br> ![](images/thumbnail-crc01-overview.jpg){:width="400px" height="406px"}]({% link stories/crc01-overview.md %})
+[CRC01 overview <br> ![](images/thumbnail-crc01-overview.jpg){:width="400px" height="406px"}]({{ site.baseurl }}{% link stories/crc01-overview.md %})
 
 {::comment}
-[CRC01 Z-stack <br> ![](images/thumbnail-crc01-stack.jpg){:width="400px" height="391px"}]({% link stories/crc01-stack.html %})
+[CRC01 Z-stack <br> ![](images/thumbnail-crc01-stack.jpg){:width="400px" height="391px"}]({{ site.baseurl }}{% link stories/crc01-stack.html %})
 {:/comment}
 
 ## Data Explorations
 
-[CRC01 introduction <br> ![](images/thumbnail-crc01-introduction.jpg){:width="400px" height="413px"}]({% link stories/crc01-introduction.md %})
+[CRC01 introduction <br> ![](images/thumbnail-crc01-introduction.jpg){:width="400px" height="413px"}]({{ site.baseurl }}{% link stories/crc01-introduction.md %})
 
 ## About Minerva: Exploring the primary image data in Lin-Wang-Sorger et al.
 
