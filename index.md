@@ -1,7 +1,7 @@
 ---
-title: About CRC Atlas 1
 layout: default
 nav_order: 1
+toc: true
 ---
 
 # HTA CRC Atlas 1
@@ -16,6 +16,12 @@ states underlying morphological features of known diagnostic and prognostic
 significance in colorectal cancer. This includes the tumor invasive margin,
 where tumor, normal, and immune cells compete and were diverse immunosuppressive
 environments are found.
+
+## Contents
+* [Data Overviews](#data-overviews)
+* [Data Explorations](#data-explorations)
+* [About Minerva](#about-minerva)
+
 
 ## Data overviews
 
@@ -126,7 +132,8 @@ environments are found.
 [CRC01 Z-stack <br> ![](images/thumbnail-crc01-stack.jpg){:width="400px" height="391px"}]({{ site.baseurl }}{% link stories/crc01-stack.html %})
 {:/comment}
 
-## About Minerva: Exploring the primary image data in Lin-Wang-Sorger et al.
+## About Minerva
+### Exploring the primary image data in Lin-Wang-Sorger et al.
 
 The images in Lin et al. (2021) comprise a ~4.5 TB dataset with some images as
 large as 1 gigapixel.  We provide access to this information without restriction
