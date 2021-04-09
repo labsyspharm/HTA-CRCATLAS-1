@@ -13,7 +13,7 @@
         <script src="https://cdn.jsdelivr.net/npm/minerva-browser@2.14.2/build/bundle.js"></script>
         <script>
          window.viewer = MinervaStory.default.build_page({
-             homeUrl: "{{ site.baseurl }}",
+             homeUrl: "{{ site.baseurl }}{% link index.md %}",
              exhibit: "{{ page.exhibit_json }}",
              id: "minerva-browser",
              embedded: true
