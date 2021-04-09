@@ -4,4 +4,3 @@ search_enabled: false
 
 plugins:
   - jekyll-remote-theme
-
