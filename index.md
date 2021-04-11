@@ -25,6 +25,9 @@ environments are found.
 
 ## Data overviews
 
+**NOTE! These Data Overviews provide access to minimally processed
+Level 2 images with no annotation or quality control.**
+
 
 <figure class="figure-story">
   <a href="{{ site.baseurl }}{% link stories/crc01-overview.md %}">
