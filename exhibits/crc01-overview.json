@@ -2,7 +2,7 @@
   "Name": "Multiplexed 3D atlas of state transitions and immune interactions in colorectal cancer (CRC01 Z-stack)",
   "Header": "This data overview shows minimally processed (Level 2) image data relevant to HMS HTAN Center analysis of colorectal cancer specimen CRC1 released in April, 2021. Images were subjected to additional quality control, illumination correction, segmentation and quantification to generate the data described in Lin et al (2021).\n\n25 images are shown, each corresponding to a single ~1.6 cm x ~1.6 cm FFPE tissue section 5 microns thick. Each image comprises 361 successive megapixel image tiles stitched together and flat-fielded using MCMICRO software to generate whole-slide images each with 7 x 10^8 pixels. A total of 5 x 10^7 cells were identified.\n\nThe specimen comprises tumor and adjacent normal tissue resected from the cecum of a 69-year old male; pathology revealed a poorly differentiated stage IIIB adenocarcinoma (pT3N1bM0) with microsatellite instability (MSI-H) and a BRAFV600E (c.1799T>A) mutation. The tumor had an extended front invading into the muscularis propria and connective tissue.\n\nImaging involved 24-plex cyclic immunofluorescence using antibodies against lineage-specific markers of epithelial, immune, and stromal cell types, as well as markers of cell cycle state, signaling pathway activity, and immune checkpoint expression. The data were collected on a RareCyte Inc. CyteFinder slide scanning fluorescence microscope using a 20x 0.75 NA objective.",
   "Rotation": 0,
-  "FirstGroup": "Cycle 3",
+  "FirstGroup": "Cycle 4",
   "Images": [
     {
       "Name": "i0",
@@ -406,5 +406,6 @@
       ]
     }
   ],
-  "Masks": []
+  "Masks": [],
+  "PixelsPerMicron": 1.5385
 }
