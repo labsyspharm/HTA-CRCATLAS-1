@@ -26,7 +26,9 @@ environments are found.
 ## Data overviews
 
 **NOTE! These Data Overviews provide access to minimally processed
-Level 2 images with no annotation or quality control.**
+Level 2 images with no annotation or quality control. Click any of the
+following thumbnail images for an interactive view of the
+full-resolution images.**
 
 
 <figure class="figure-story">
