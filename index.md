@@ -34,7 +34,14 @@ full-resolution images.**
 <figure class="figure-story">
   <a href="{{ site.baseurl }}{% link stories/crc01-overview.md %}">
     <img src="{{ site.baseurl }}/images/thumbnail-crc01-overview.jpg">
-    <figcaption>CRC01</figcaption>
+    <figcaption>CRC01 &ndash; CyCIF</figcaption>
+  </a>
+</figure>
+
+<figure class="figure-story">
+  <a href="{{ site.baseurl }}{% link stories/crc01-overview-he.md %}">
+    <img src="{{ site.baseurl }}/images/thumbnail-crc01-overview-he.jpg">
+    <figcaption>CRC01 &ndash; H&E</figcaption>
   </a>
 </figure>
 
