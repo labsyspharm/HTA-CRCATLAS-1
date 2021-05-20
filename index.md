@@ -30,130 +30,73 @@ Level 2 images with no annotation or quality control. Click any of the
 following thumbnail images for an interactive view of the
 full-resolution images.**
 
+{% 
+    assign overviews = site.minerva 
+    | where_exp: "item", "item.hide != true"
+    | where_exp: "item", "item['exhibit type'] != 'story'"
+%}
+{% 
+    assign stories = site.minerva 
+    | where_exp: "item", "item.hide != true"
+    | where_exp: "item", "item['exhibit type'] == 'story'"
+%}
 
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+
+{% for o in overviews %}
+{% assign thumbnail_name = o.url 
+    | split: '/' 
+    | last
+    | replace: '.html', '.jpg'
+    | prepend: "thumbnail-"
+%}
+{% assign caption = 
+    o.url 
+    | split: '/' 
+    | last
+    | replace: '-overview.html', ' – cycif'
+    | upcase
+%}
+{{o.exhibit_type}}
 <figure class="figure-story">
-  <a href="{{ site.baseurl }}{% link stories/crc01-overview.md %}">
-    <img src="{{ site.baseurl }}/images/thumbnail-crc01-overview.jpg">
-    <figcaption>CRC01 &ndash; CyCIF</figcaption>
-  </a>
+    <a href="{{ o.url }}">
+        <img src="{{ site.baseurl }}/images/{{ thumbnail_name }}">
+        <figcaption>{{ caption }}</figcaption>
+    </a>
 </figure>
-
-<figure class="figure-story">
-  <a href="{{ site.baseurl }}{% link stories/crc01-overview-he.md %}">
-    <img src="{{ site.baseurl }}/images/thumbnail-crc01-overview-he.jpg">
-    <figcaption>CRC01 &ndash; H&E</figcaption>
-  </a>
-</figure>
-
-<div style="display: flex; flex-wrap: wrap;">
-
-<div><figure class="figure-story figure-story-grid">
-  <a href="{{ site.baseurl }}{% link stories/crc02-overview.md %}">
-    <img src="{{ site.baseurl }}/images/thumbnail-crc02-overview.jpg">
-    <figcaption>CRC02</figcaption>
-  </a>
-</figure></div>
-<div><figure class="figure-story figure-story-grid">
-  <a href="{{ site.baseurl }}{% link stories/crc03-overview.md %}">
-    <img src="{{ site.baseurl }}/images/thumbnail-crc03-overview.jpg">
-    <figcaption>CRC03</figcaption>
-  </a>
-</figure></div>
-<div><figure class="figure-story figure-story-grid">
-  <a href="{{ site.baseurl }}{% link stories/crc04-overview.md %}">
-    <img src="{{ site.baseurl }}/images/thumbnail-crc04-overview.jpg">
-    <figcaption>CRC04</figcaption>
-  </a>
-</figure></div>
-<div><figure class="figure-story figure-story-grid">
-  <a href="{{ site.baseurl }}{% link stories/crc05-overview.md %}">
-    <img src="{{ site.baseurl }}/images/thumbnail-crc05-overview.jpg">
-    <figcaption>CRC05</figcaption>
-  </a>
-</figure></div>
-<div><figure class="figure-story figure-story-grid">
-  <a href="{{ site.baseurl }}{% link stories/crc06-overview.md %}">
-    <img src="{{ site.baseurl }}/images/thumbnail-crc06-overview.jpg">
-    <figcaption>CRC06</figcaption>
-  </a>
-</figure></div>
-<div><figure class="figure-story figure-story-grid">
-  <a href="{{ site.baseurl }}{% link stories/crc07-overview.md %}">
-    <img src="{{ site.baseurl }}/images/thumbnail-crc07-overview.jpg">
-    <figcaption>CRC07</figcaption>
-  </a>
-</figure></div>
-<div><figure class="figure-story figure-story-grid">
-  <a href="{{ site.baseurl }}{% link stories/crc08-overview.md %}">
-    <img src="{{ site.baseurl }}/images/thumbnail-crc08-overview.jpg">
-    <figcaption>CRC08</figcaption>
-  </a>
-</figure></div>
-<div><figure class="figure-story figure-story-grid">
-  <a href="{{ site.baseurl }}{% link stories/crc09-overview.md %}">
-    <img src="{{ site.baseurl }}/images/thumbnail-crc09-overview.jpg">
-    <figcaption>CRC09</figcaption>
-  </a>
-</figure></div>
-<div><figure class="figure-story figure-story-grid">
-  <a href="{{ site.baseurl }}{% link stories/crc10-overview.md %}">
-    <img src="{{ site.baseurl }}/images/thumbnail-crc10-overview.jpg">
-    <figcaption>CRC10</figcaption>
-  </a>
-</figure></div>
-<div><figure class="figure-story figure-story-grid">
-  <a href="{{ site.baseurl }}{% link stories/crc11-overview.md %}">
-    <img src="{{ site.baseurl }}/images/thumbnail-crc11-overview.jpg">
-    <figcaption>CRC11</figcaption>
-  </a>
-</figure></div>
-<div><figure class="figure-story figure-story-grid">
-  <a href="{{ site.baseurl }}{% link stories/crc12-overview.md %}">
-    <img src="{{ site.baseurl }}/images/thumbnail-crc12-overview.jpg">
-    <figcaption>CRC12</figcaption>
-  </a>
-</figure></div>
-<div><figure class="figure-story figure-story-grid">
-  <a href="{{ site.baseurl }}{% link stories/crc13-overview.md %}">
-    <img src="{{ site.baseurl }}/images/thumbnail-crc13-overview.jpg">
-    <figcaption>CRC13</figcaption>
-  </a>
-</figure></div>
-<div><figure class="figure-story figure-story-grid">
-  <a href="{{ site.baseurl }}{% link stories/crc14-overview.md %}">
-    <img src="{{ site.baseurl }}/images/thumbnail-crc14-overview.jpg">
-    <figcaption>CRC14</figcaption>
-  </a>
-</figure></div>
-<div><figure class="figure-story figure-story-grid">
-  <a href="{{ site.baseurl }}{% link stories/crc15-overview.md %}">
-    <img src="{{ site.baseurl }}/images/thumbnail-crc15-overview.jpg">
-    <figcaption>CRC15</figcaption>
-  </a>
-</figure></div>
-<div><figure class="figure-story figure-story-grid">
-  <a href="{{ site.baseurl }}{% link stories/crc16-overview.md %}">
-    <img src="{{ site.baseurl }}/images/thumbnail-crc16-overview.jpg">
-    <figcaption>CRC16</figcaption>
-  </a>
-</figure></div>
-<div><figure class="figure-story figure-story-grid">
-  <a href="{{ site.baseurl }}{% link stories/crc17-overview.md %}">
-    <img src="{{ site.baseurl }}/images/thumbnail-crc17-overview.jpg">
-    <figcaption>CRC17</figcaption>
-  </a>
-</figure></div>
+{% endfor %}
 
 </div>
 
 ## Data Explorations
 
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
+
+{% for story in stories %}
+{% assign thumbnail_name = story.url 
+    | split: '/' 
+    | last
+    | replace: '.html', '.jpg'
+    | prepend: "thumbnail-"
+%}
+{% assign caption = 
+    story.url 
+    | split: '/' 
+    | last
+    | replace: '.html', ''
+    | replace: '-', ' – '
+    | upcase
+%}
 <figure class="figure-story">
-  <a href="{{ site.baseurl }}{% link stories/crc01-introduction.md %}">
-    <img src="{{ site.baseurl }}/images/thumbnail-crc01-introduction.jpg">
-    <figcaption>CRC01 introduction</figcaption>
-  </a>
+    <a href="{{ story.url }}">
+        <img src="{{ site.baseurl }}/images/{{ thumbnail_name }}">
+        <figcaption>{{ caption }}</figcaption>
+    </a>
 </figure>
+{% endfor %}
+
+</div>
+
 
 {::comment}
 [CRC01 Z-stack <br> ![](images/thumbnail-crc01-stack.jpg){:width="400px" height="391px"}]({{ site.baseurl }}{% link stories/crc01-stack.html %})
