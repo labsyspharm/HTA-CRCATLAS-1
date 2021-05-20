@@ -54,6 +54,7 @@ full-resolution images.**
     o.url 
     | split: '/' 
     | last
+    | replace: '-he-overview.html', ' – H&E'
     | replace: '-overview.html', ' – cycif'
     | upcase
 %}
