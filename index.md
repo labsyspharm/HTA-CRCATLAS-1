@@ -69,6 +69,7 @@ full-resolution images.**
 
 </div>
 
+
 ## Data Explorations
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
@@ -98,10 +99,6 @@ full-resolution images.**
 
 </div>
 
-
-{::comment}
-[CRC01 Z-stack <br> ![](images/thumbnail-crc01-stack.jpg){:width="400px" height="391px"}]({{ site.baseurl }}{% link stories/crc01-stack.html %})
-{:/comment}
 
 ## About Minerva
 ### Exploring the primary image data in Lin-Wang-Sorger et al.
