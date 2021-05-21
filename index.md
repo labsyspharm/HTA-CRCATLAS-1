@@ -57,6 +57,7 @@ full-resolution images.**
     | replace: '-he-overview.html', ' – H&E'
     | replace: '-overview.html', ' – cycif'
     | upcase
+    | replace: 'CYCIF', 'CyCIF'
 %}
 <figure class="figure-story">
     <a href="{{ overview.url | prepend: site.baseurl }}">
@@ -87,9 +88,10 @@ full-resolution images.**
     | replace: '.html', ''
     | replace: '-', ' – '
     | upcase
+    | replace: 'CYCIF', 'CyCIF'
 %}
 <figure class="figure-story">
-    <a href="{{ overview.url | prepend: site.baseurl }}">
+    <a href="{{ story.url | prepend: site.baseurl }}">
         <img src="{{ site.baseurl }}/images/{{ thumbnail_name }}">
         <figcaption>{{ caption }}</figcaption>
     </a>
