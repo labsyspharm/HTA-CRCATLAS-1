@@ -8,10 +8,6 @@ figure.figure-story:hover {
   filter: opacity(0.5);
 }
 
-figure.figure-story.figure-story-grid {
-  width: 205px;
-}
-
 figure.figure-story figcaption {
   position: absolute;
   top: 8px;
@@ -20,4 +16,21 @@ figure.figure-story figcaption {
   background: rgb(0, 0, 0);
   padding: 5px;
   line-height: 1em;
+}
+
+figure.figure-story:after {
+  content: "";
+  display: block;
+  padding-bottom: 75%;
+}
+
+figure.figure-story > * {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+figure.figure-story img {
+  max-height: 100%;
+  max-width: 100%;
 }
