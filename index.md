@@ -43,24 +43,23 @@ full-resolution images.**
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
 
-{% for o in overviews %}
-{% assign thumbnail_name = o.url 
+{% for overview in overviews %}
+{% assign thumbnail_name = overview.url 
     | split: '/' 
     | last
     | replace: '.html', '.jpg'
     | prepend: "thumbnail-"
 %}
 {% assign caption = 
-    o.url 
+    overview.url 
     | split: '/' 
     | last
     | replace: '-he-overview.html', ' – H&E'
     | replace: '-overview.html', ' – cycif'
     | upcase
 %}
-{{o.exhibit_type}}
 <figure class="figure-story">
-    <a href="{{ o.url }}">
+    <a href="{{ overview.url | prepend: site.baseurl }}">
         <img src="{{ site.baseurl }}/images/{{ thumbnail_name }}">
         <figcaption>{{ caption }}</figcaption>
     </a>
@@ -90,7 +89,7 @@ full-resolution images.**
     | upcase
 %}
 <figure class="figure-story">
-    <a href="{{ story.url }}">
+    <a href="{{ overview.url | prepend: site.baseurl }}">
         <img src="{{ site.baseurl }}/images/{{ thumbnail_name }}">
         <figcaption>{{ caption }}</figcaption>
     </a>
